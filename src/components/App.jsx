@@ -5,7 +5,7 @@ import { Searchbar } from './searchbar';
 import { ImageGallery } from './imageGallery';
 import { Button } from './button';
 import { Loader } from './loader';
-import { fetchPicture } from './api';
+import { fetchPicture } from 'api';
 import { ModalWindow } from './modal';
 
 Modal.setAppElement('#root');
