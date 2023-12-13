@@ -44,29 +44,10 @@ const App = () => {
     setIsOpen(false);
   };
 
-  /* componentDidUpdate(prevProps, prevState) {
-    console.log('componentDidUpdate', prevState, this.state);
-    if (
-      prevState.picture !== this.state.picture ||
-      prevState.page !== this.state.page
-    ) {
-      fetchPicture(this.state.picture, this.state.page).then(res => {
-        this.setState({
-          picArray:
-            this.state.page === 1
-              ? res.hits
-              : [...prevState.picArray, ...res.hits],
-          isLoading: false,
-        });
-      });
-    }
-  } */
-
   const formSubmit = event => {
     event.preventDefault();
     const value = event.target.elements[1].value;
     setPicture(value);
-    setIsLoading(true);
     setPage(1);
     setPicArray([]);
   };
